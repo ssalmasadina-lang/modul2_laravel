@@ -1,0 +1,3 @@
+<div style="padding: 10px; border: 1px solid {{ $type === 'success' ? 'green' : ($type === 'error' ? 'red' : 'blue') }}; background-color: {{ $type === 'success' ? '#d4edda' : ($type === 'error' ? '#f8d7da' : '#cce5ff') }}; color: {{ $type === 'success' ? '#155724' : ($type === 'error' ? '#721c24' : '#004085') }}; border-radius: 5px; margin-bottom: 15px;">
+ <strong>{{ucfirst($type)}}!</strong> {{ $message }}
+</div>
